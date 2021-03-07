@@ -1,0 +1,31 @@
+import * as FaIcons from 'react-icons/fa';
+import * as RiIcons from "react-icons/ri";
+import * as SiIcons from "react-icons/si";
+
+const ContactData = [{
+    title: 'facebook',
+    path: 'https://www.facebook.com/moldovanu.andrei.165/',
+    icon: < RiIcons.RiFacebookFill />,
+    cName: 'c-icon'
+},
+{
+    title: 'instagram',
+    path: 'https://www.instagram.com/m.albert_andrei/',
+    icon: < SiIcons.SiInstagram />,
+    cName: 'c-icon'
+},
+{
+    title: 'whatsapp',
+    path: '/main/contacts',
+    icon: < FaIcons.FaWhatsapp />,
+    cName: 'c-icon'
+},
+{
+    title: 'mail',
+    path: '/main/contacts',
+    icon: < SiIcons.SiGmail />,
+    cName: 'c-icon'
+}
+]
+
+export default ContactData
