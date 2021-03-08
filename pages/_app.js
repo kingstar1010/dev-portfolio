@@ -11,6 +11,11 @@ function MyApp({ Component, pageProps }) {
     <>
       <Head>
         <link rel="shortcut icon" href="/favicon.png" />
+        <title>Albert-Andrei Moldovanu</title>
+        <meta charset="UTF-8" />
+        <meta name="description" content="This website is Albert's portfolio" />
+        <meta name="keywords" content="HTML, CSS, JavaScript" />
+        <meta name="author" content="Albert-Andrei Moldovanu" />
       </Head>
 
       <Component {...pageProps} />

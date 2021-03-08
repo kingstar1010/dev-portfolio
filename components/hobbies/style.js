@@ -51,7 +51,16 @@ export default css.global`
 }
 
 @media only screen and (max-width: 600px) {
- 
+    .h-content {
+        grid-template-columns: 45% 45%;
+        grid-gap: 25px;
+        row-gap: 50px;
+    }
+
+    .hobie {
+        height: 130px;
+        width: 130px;
+    }
 }
 
 `

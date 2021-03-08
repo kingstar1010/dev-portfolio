@@ -83,13 +83,13 @@ export default css.global`
 
 @media only screen and (min-width: 1120px) {
    .footer {
-       height: 45vh;
+       height: 40vh;
    }
 }
 
 @media only screen and (max-width: 1220px) {
     .footer {
-        height: 100%;
+        height: 40vh;
     }
 }
 

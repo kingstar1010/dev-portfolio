@@ -1,9 +1,7 @@
 import Link from 'next/link';
-import * as FaIcons from 'react-icons/fa';
-import * as AiIcons from "react-icons/ai";
 import { useState } from 'react';
-import SidebarData from '../../data/NavBarData';
 import SideBar from '../sidebar/SideBar'
+import Image from 'next/image'
 
 const NavBar = () => {
 
@@ -16,7 +14,9 @@ const NavBar = () => {
       <div className='nav-blur'></div>
       <div className="header">
         <Link href="/">
-          <a className="logo">Logo</a>
+          <a className="logo"><Image src="/logo.png"
+            alt="Main Logo" width={220}
+            height={50} /></a>
         </Link>
         {/* <a href="/" className="logo">Logo</a> */}
       </div>

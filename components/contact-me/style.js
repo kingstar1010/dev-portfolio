@@ -77,4 +77,11 @@ export default css.global`
     display: flex;
 }
 
+
+@media only screen and (max-width: 600px) {
+    #about .contact-me {
+            z-index: 2;
+    }
+}
+
 `

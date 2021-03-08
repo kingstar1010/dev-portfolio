@@ -59,15 +59,20 @@ export default css.global`
    .about-text h5 {
        width: 100%;
        font-size: 15px;
-        margin-bottom: 120px;
+       margin-bottom: 120px;
     }
 }
 
 @media only screen and (max-width: 600px) {
-    .about-text { 
-        padding: 0px;
+    .about-text {
+        padding: 10px;
     }
-
+    
+    .about-text p {
+        width: 100%;
+        font-size: 25px;
+        padding: 0px 10px;
+    }
     .about-text h5 {
         margin-bottom: 90px;
     }

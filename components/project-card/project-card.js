@@ -13,26 +13,8 @@ export default function PCard(props) {
                 {cstyle}
             </style>
 
-            {/* <div className='card'>
-                <div className='front'>
-                    <img className='c-img' src={value.path} alt="img" width="325" height="200" />
-
-                    <div className='card-content'>
-                        <h3>{value.title}</h3>
-                        <p>{value.content}</p>
-                    </div>
-
-                    <div style={{ background: '#26c2ff' }}>
-                        <p className='footer-text' >hover me</p>
-                    </div>
-                </div>
-                <div className='back'>
-                    <h2>Back </h2>
-                </div>
-            </div> */}
-
             <div className="card" style={{ backgroundColor: colors[i] }}>
-                <a href='/contacts'>
+                <a href={value.path} target="_blank">
                     <div className={value.cName}>
                         <h1 className='c-title'>{value.title}</h1>
                         <p className='c-body'>
@@ -47,4 +29,4 @@ export default function PCard(props) {
             </div>
         </div>
     )
-}   
+}

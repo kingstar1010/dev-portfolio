@@ -7,15 +7,15 @@ import Carousel from "../components/carousel/carousel";
 import Hobies from "../components/hobbies/hobies";
 
 export default function About() {
-  return (
-    <div>
-      <NavBar />
-      <ContactMe />
-      <Tabout />
-      <Carousel />
-      <Hobies />
-      <WTText />
-      <Footer />
-    </div>
-  );
+    return (
+        <div id='about'>
+            <NavBar />
+            <ContactMe />
+            <Tabout />
+            <Carousel />
+            <Hobies />
+            <WTText />
+            <Footer />
+        </div>
+    );
 }

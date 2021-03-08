@@ -50,7 +50,7 @@ export default function Pbar(props) {
                     </div>
                 </div>
                 <div className='pb-title'>
-                    <img src={value.path}></img>
+                    <img src={value.path} alt='progress-bar image'></img>
                     <p>{value.title}</p>
                 </div>
             </div>

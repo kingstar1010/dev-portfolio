@@ -70,7 +70,7 @@ export default css.global`
     @media only screen and (max-width: 600px) {
 
         .lwt-text {
-            height: 35vh;
+            height: 40vh;
             justify-content: center;
         }
 

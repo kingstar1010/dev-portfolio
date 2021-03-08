@@ -7,7 +7,7 @@ export default function PLang(props) {
 
     return (
         <div className='p-lang'>
-            <img src={value.path}></img>
+            <img src={value.path} alt='image'></img>
             <p>{value.title}</p>
             <PBar value={value} key={i} />
         </div>

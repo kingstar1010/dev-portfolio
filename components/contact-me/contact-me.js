@@ -7,7 +7,7 @@ export default function ContactMe() {
             <style jsx global>
                 {style}
             </style>
-            <a href='http://localhost:3000/contacts'>
+            <a href='/contacts'>
                 <div className='cm-icon'>
                     <FaIcons.FaRegEnvelope />
                 </div>
