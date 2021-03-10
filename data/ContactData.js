@@ -18,13 +18,13 @@ const ContactData = [{
     title: 'whatsapp',
     path: '/main/contacts',
     icon: < FaIcons.FaWhatsapp />,
-    cName: 'c-icon'
+    cName: 'c-icon whatsappbox'
 },
 {
     title: 'mail',
-    path: '/main/contacts',
+    path: '/contacts',
     icon: < SiIcons.SiGmail />,
-    cName: 'c-icon'
+    cName: 'c-icon mailbox'
 }
 ]
 

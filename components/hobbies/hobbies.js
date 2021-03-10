@@ -1,17 +1,17 @@
 import style from './style.js'
 import hobies from '../../data/HobieData'
-import Hobie from './hobie-item'
+import Hobbie from './hobbie-item'
 
-export default function Hobies() {
+export default function Hobbies() {
     return (
         <div className='hobies'>
             <style jsx global>
                 {style}
             </style>
-            <h1 className='h-title'>Hobies</h1>
+            <h1 className='h-title'>Hobbies</h1>
             <div className='h-content'>
-                {hobies.map((hobie, index) => (
-                    <Hobie hobie={hobie} key={index} />
+                {hobies.map((hobbie, index) => (
+                    <Hobbie hobbie={hobbie} key={index} />
                 ))}
             </div>
         </div>

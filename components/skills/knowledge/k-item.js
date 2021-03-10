@@ -14,7 +14,7 @@ export default function KItem(props) {
                 {style}
             </style>
             <div className='card'>
-                <div className='text' style={{ background: category.color }}>
+                <div className='text' style={{ background: '#26c2ff' }}>
                     {category.title}
                 </div>
                 <div className='box'>

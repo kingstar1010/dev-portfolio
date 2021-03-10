@@ -8,7 +8,7 @@ export default function WTText() {
                 {style}
             </style>
             <h4>Need some help?</h4>
-            <a className='lwt-link' style={{ marginBottom: '65px' }}>
+            <a className='lwt-link' href='/contacts' style={{ marginBottom: '65px' }}>
                 Let’s work together <ImIcons.ImArrowRight2 />
             </a>
         </div>

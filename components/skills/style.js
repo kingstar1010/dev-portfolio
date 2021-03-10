@@ -13,7 +13,8 @@ export default css.global`
     display: flex;
     flex-direction: column;
     justify-content: space-around; */
-    padding: 80px 30px 0px 30px;
+    /* padding: 80px 30px 0px 30px; */
+    padding: 0px 30px 0px 30px;
 }
 
 .s-container > h1{
@@ -27,9 +28,12 @@ export default css.global`
     margin-top: 0px;
 }
 
-@media only screen and (max-width: 600px) {
-    
+@media only screen and (min-width: 1200px) {
+    .s-container > h1 {
+        display: none;
+    }
 }
+
 @media only screen and (max-width: 600px) {
     .s-container > h1::before {
         content: '';

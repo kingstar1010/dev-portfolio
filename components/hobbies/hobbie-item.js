@@ -1,16 +1,16 @@
 import style from './style.js'
 
-export default function Hobie(props) {
+export default function Hobbie(props) {
 
-    const { hobie } = { ...props }
+    const { hobbie } = { ...props }
 
     return (
         <div className='hobie'>
             <style jsx global>
                 {style}
             </style>
-            {hobie.icon}
-            <h1 className=''>{hobie.title}</h1>
+            {hobbie.icon}
+            <h1 className=''>{hobbie.title}</h1>
         </div>
     )
 }

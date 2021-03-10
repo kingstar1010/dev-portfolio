@@ -73,11 +73,11 @@ export default css.global`
     margin-left: 60px 
 }
 
-.footer-fm .mail{
+.footer-fm .mailbox{
     display: none;
 }
 
-.footer-fm .whatsapp{
+.footer-fm .whatsappbox{
     display: none;
 }
 

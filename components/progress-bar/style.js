@@ -86,7 +86,7 @@ export default css.global`
     width: 100%;
     height: 100%;
     fill: none;
-    stroke: #191919;
+    stroke: rgb(210, 210, 210);
     stroke-width: 15;
     stroke-linecap: round;
     transform: translate(10px, 10px);

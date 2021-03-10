@@ -5,7 +5,7 @@ export default css.global`
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,500;1,100;1,200&display=swap');
 
     .st-container {
-        height: 100vh;
+        height: 70vh;
         width: 100%;
         padding: 0px;
         display: flex;

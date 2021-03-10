@@ -3,6 +3,7 @@ import Contact from "../components/contact/contact";
 import ContactInfo from "../components/contact-info/contact-info";
 import TextField from "@material-ui/core/TextField";
 import { makeStyles } from "@material-ui/core/styles";
+import { useState } from "react";
 import emailjs from "emailjs-com";
 
 const useStyles = makeStyles((theme) => ({
@@ -20,6 +21,11 @@ const useStyles = makeStyles((theme) => ({
 export default function Contacts() {
   const classes = useStyles();
 
+  const [validation, setValidation] = useState(false)
+  const validate = () => setValidation(!validation)
+
+  const [text, setText] = useState("Waiting...")
+
   function sendEmail(e) {
     console.log("privet");
 
@@ -35,9 +41,13 @@ export default function Contacts() {
       .then(
         (result) => {
           console.log(result.text);
+          // alert('Okkkey... ' + result.text);
+          setText("I received your message.");
         },
         (error) => {
           console.log(error.text);
+          // alert('Oops... ' + error.text);
+          setText('Oops... ' + error.text);
         }
       );
   }
@@ -59,58 +69,70 @@ export default function Contacts() {
               </div>
             </div>
             <div className="contactForm">
-              <h1>Send a Message</h1>
 
-              <div className="imputs">
-                <div className="i-top">
+              <div style={{ display: validation ? 'none' : 'initial' }}>
+
+                <h1>Send a Message</h1>
+
+                <div className="imputs">
+                  <div className="i-top">
+                    <TextField
+                      id="name"
+                      name="name"
+                      required
+                      label="Name"
+                      variant="standard"
+                      style={{
+                        width: "100%",
+                        marginBottom: "20px",
+                      }}
+                    />
+                    <div className="calhoz"></div>
+                    <TextField
+                      id="email"
+                      name="email"
+                      required
+                      label="Email"
+                      variant="standard"
+                      style={{
+                        width: "100%",
+                        marginBottom: "20px",
+                      }}
+                    />
+                  </div>
                   <TextField
-                    id="name"
-                    name="name"
+                    id="standard-basic"
+                    name="subject"
                     required
-                    label="Name"
+                    label="Subject"
                     variant="standard"
-                    style={{
-                      width: "100%",
-                      marginBottom: "20px",
-                    }}
+                    style={{ marginBottom: "20px" }}
                   />
-                  <div className="calhoz"></div>
                   <TextField
-                    id="email"
-                    name="email"
+                    id="standard-basic"
+                    name="message"
+                    className={classes.bigField}
+                    multiline
+                    maxRows={5}
                     required
-                    label="Email"
+                    label="Message"
                     variant="standard"
                     style={{
-                      width: "100%",
-                      marginBottom: "20px",
+                      height: "25px",
                     }}
                   />
                 </div>
-                <TextField
-                  id="standard-basic"
-                  name="subject"
-                  required
-                  label="Subject"
-                  variant="standard"
-                  style={{ marginBottom: "20px" }}
-                />
-                <TextField
-                  id="standard-basic"
-                  name="message"
-                  className={classes.bigField}
-                  multiline
-                  maxRows={5}
-                  required
-                  label="Message"
-                  variant="standard"
-                  style={{
-                    height: "25px",
-                  }}
-                />
+
+                <input type="submit" value="Send" className="send-message" onClick={validate} />
               </div>
 
-              <input type="submit" value="Send" className="send-message" />
+              <div style={{ display: validation ? 'initial' : 'none' }}>
+                <div className='validation' >
+                  <h1>Thank you for contacting me.</h1>
+                  <h2>{text}</h2>
+                  <a href='/'>Return to home page</a>
+                </div>
+              </div>
             </div>
           </div>
         </section>

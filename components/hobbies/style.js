@@ -10,9 +10,13 @@ export default css.global`
 }
 
 .h-title {
-    margin-bottom: 30px;
     position: sticky;
-    top: 80px;
+    top: 100px;
+    margin: 40px 0px 100px;
+    font-size: 60px;
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: 2px;
 }
 
 .h-content {

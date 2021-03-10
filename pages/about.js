@@ -4,7 +4,7 @@ import ContactMe from "../components/contact-me/contact-me";
 import WTText from "../components/lets-work-together-text/WTText";
 import Tabout from "../components/about-text/Tabout";
 import Carousel from "../components/carousel/carousel";
-import Hobies from "../components/hobbies/hobies";
+import Hobbies from "../components/hobbies/hobbies";
 
 export default function About() {
     return (
@@ -13,7 +13,7 @@ export default function About() {
             <ContactMe />
             <Tabout />
             <Carousel />
-            <Hobies />
+            <Hobbies />
             <WTText />
             <Footer />
         </div>

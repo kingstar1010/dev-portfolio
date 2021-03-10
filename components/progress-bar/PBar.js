@@ -8,7 +8,8 @@ export default function Pbar(props) {
     const { value, i } = { ...props }
 
     const mystyle = {
-        stroke: value.color,
+        // stroke: value.color,
+        stroke: "#26c2ff",
         strokeDashoffset: (565 - (565 * value.progress) / 100)
     };
 
