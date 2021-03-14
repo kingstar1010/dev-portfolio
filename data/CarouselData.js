@@ -13,22 +13,12 @@ const CarouselData = [
         title: "Moldova",
         image: (
             <img
-                src="/SQLite.png"
+                src="/church-nativity-blessed-virgin-mary-located-hill-trebujeni-moldova.jpg"
                 alt="sqlite"
                 style={{ width: "93%", maxHeight: "90vh" }}
             />
         ),
-    },
-    {
-        title: "Moldova",
-        image: (
-            <img
-                src="/jspng.png"
-                alt="sqlite"
-                style={{ width: "93%", maxHeight: "90vh" }}
-            />
-        ),
-    },
+    }
 ];
 
 export default CarouselData;

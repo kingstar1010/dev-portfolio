@@ -83,7 +83,7 @@ export default css.global`
 
 @media only screen and (min-width: 1120px) {
    .footer {
-       height: 40vh;
+       height: 260px;
    }
 }
 

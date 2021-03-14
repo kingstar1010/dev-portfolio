@@ -76,6 +76,12 @@ export default css.global`
     transform: scale(2);
 }
 
+.c-icon a:hover .linked-in {
+    transition: 0.3s;
+    color: #0077b5;
+    transform: scale(2);
+}
+
 .c-icon a:hover .mail {
     transition: 0.3s;
     color: #f00;
@@ -100,6 +106,12 @@ export default css.global`
     transform: scale(2);
 }
 
+#info .c-icon a:hover .linked-in {
+    transition: 0.3s;
+    color: #0077b5;
+    transform: scale(2);
+}
+
 #info .c-icon a:hover .mail {
     transition: 0.3s;
     color: #f00;
@@ -121,6 +133,11 @@ export default css.global`
     transform: scale(2);
 }
 
+.c-icon a .linked-in {
+    transition: 0.3s;
+    transform: scale(2);
+}
+
 .c-icon a .mail {
     transition: 0.3s;
     transform: scale(2);
@@ -135,6 +152,10 @@ export default css.global`
 }
 
 #info .c-icon a .instagram {
+    color: #fff;
+}
+
+#info .c-icon a .linked-in {
     color: #fff;
 }
 

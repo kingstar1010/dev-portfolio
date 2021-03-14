@@ -4,30 +4,14 @@ export default css.global`
   @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,500;1,100;1,200&display=swap');
 
   .main-container {
-    /* position: relative;
-    height: 480px;
-    width: 400px; */
-    /* border-radius: 10px; */
-
-    height: 560px;
+    height: 620px;
     width: 100%;
   }
 
   .card {
     height: 100%;
     width: 100%;
-    /* background: gray; */
-    /* border-radius: 10px;s */
-    /* position: absolute; */
   }
-/* 
-  .card:hover> .front {
-    transform: perspective(600px) rotateY(-180deg);
-  }
-  
-  .card:hover> .back {
-    transform: perspective(600px) rotateY(0deg);
-  } */
 
   .card> .front {
     position: absolute;
@@ -80,10 +64,6 @@ export default css.global`
     width: 100%;
     padding: 40px;
     color: white;
-/* 
-    background-image: ;
-    background-size: cover;
-    background-blend-mode: multiply; */
   }
 
   .card-content-w {
@@ -102,7 +82,6 @@ export default css.global`
     font-weight: 700;
     color: #fff;
     font-size: 2.2em;
-    /* width: 100%; */
     margin-top: 30px;
     margin-bottom: 30px;
     display: inline-block;
@@ -276,6 +255,21 @@ export default css.global`
 	{
 		background-position: 500%
 	}
+}
+
+@media only screen and (min-width: 1020px) {
+   
+}
+
+@media only screen and (max-width: 1020px) {
+
+}
+
+@media only screen and (max-width: 600px) {
+  .main-container {
+    height: 500px;
+    width: 100%;
+  }
 }
 
 `

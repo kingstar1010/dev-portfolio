@@ -63,6 +63,10 @@ export default css.global`
 }
 
 @media only screen and (min-width: 1120px) {
+    .lwt-text {
+        width: 100%;
+        height: calc(100vh - 260px);
+    }
 }
 
 @media only screen and (max-width: 1220px) {}

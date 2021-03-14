@@ -50,6 +50,10 @@ export default css.global`
     height: 150px;
 }
 
+.hobie h1 {
+    font-family: 'Poppins', sans-serif;
+}
+
 @media only screen and (min-width: 1300px) {
      
 }
@@ -65,6 +69,17 @@ export default css.global`
         height: 130px;
         width: 130px;
     }
+
+    .hobie svg {
+        width: 50px;
+        height: 50px;
+    }
+
+    .hobie h1 {
+        margin: 0;
+        font-size: 25px;
+    }
+}
 }
 
 `

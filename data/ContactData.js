@@ -15,8 +15,14 @@ const ContactData = [{
     cName: 'c-icon'
 },
 {
+    title: 'linked-in',
+    path: 'https://www.linkedin.com/in/albert-andrei-moldovanu-0a8199209/',
+    icon: < SiIcons.SiLinkedin />,
+    cName: 'c-icon'
+},
+{
     title: 'whatsapp',
-    path: '/main/contacts',
+    path: 'https://web.whatsapp.com/',
     icon: < FaIcons.FaWhatsapp />,
     cName: 'c-icon whatsappbox'
 },
