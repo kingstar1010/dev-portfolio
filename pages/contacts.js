@@ -4,7 +4,6 @@ import ContactInfo from "../components/contact-info/contact-info";
 import TextField from "@material-ui/core/TextField";
 import { makeStyles } from "@material-ui/core/styles";
 import { useState } from "react";
-import emailjs from "emailjs-com";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -22,34 +21,20 @@ export default function Contacts() {
   const classes = useStyles();
 
   const [validation, setValidation] = useState(false)
-  const validate = () => setValidation(!validation)
+
+  // Is called on click event of Submit button
+  const validate = () => {
+    // Changes the current state of validation
+    setValidation(!validation)
+
+    // Sets the current state of text const
+    setText("Unfortunately, this feature is temporarily disabled :(");
+  }
 
   const [text, setText] = useState("Waiting...")
 
   function sendEmail(e) {
-    console.log("privet");
-
-    e.preventDefault();
-
-    emailjs
-      .sendForm(
-        "service_bd05yec",
-        "template_ryaiefk",
-        e.target,
-        "user_0YNf5nft1MHdU745e4Uq1"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-          // alert('Okkkey... ' + result.text);
-          setText("I received your message.");
-        },
-        (error) => {
-          console.log(error.text);
-          // alert('Oops... ' + error.text);
-          setText('Oops... ' + error.text);
-        }
-      );
+    console.log("Send email function called");
   }
 
   return (
@@ -79,7 +64,6 @@ export default function Contacts() {
                     <TextField
                       id="name"
                       name="name"
-                      required
                       label="Name"
                       variant="standard"
                       style={{
@@ -91,7 +75,6 @@ export default function Contacts() {
                     <TextField
                       id="email"
                       name="email"
-                      required
                       label="Email"
                       variant="standard"
                       style={{
@@ -103,7 +86,6 @@ export default function Contacts() {
                   <TextField
                     id="standard-basic"
                     name="subject"
-                    required
                     label="Subject"
                     variant="standard"
                     style={{ marginBottom: "20px" }}
@@ -114,7 +96,6 @@ export default function Contacts() {
                     className={classes.bigField}
                     multiline
                     maxRows={5}
-                    required
                     label="Message"
                     variant="standard"
                     style={{
@@ -123,13 +104,13 @@ export default function Contacts() {
                   />
                 </div>
 
-                <input type="submit" value="Send" className="send-message" onClick={validate} />
+                <input type="button" value="Send" className="send-message" onClick={validate} />
               </div>
 
               <div style={{ display: validation ? 'initial' : 'none' }}>
                 <div className='validation' >
                   <h1>Thank you for contacting me.</h1>
-                  <h2>{text}</h2>
+                  <h2 style={{ color: '#ff0000' }}>{text}</h2>
                   <a href='/'>Return to home page</a>
                 </div>
               </div>
