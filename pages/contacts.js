@@ -2,23 +2,9 @@ import NavBar from "../components/navbar/Navbar";
 import Contact from "../components/contact/contact";
 import ContactInfo from "../components/contact-info/contact-info";
 import TextField from "@material-ui/core/TextField";
-import { makeStyles } from "@material-ui/styles";
 import { useState } from "react";
 
-const useStyles = makeStyles((theme) => ({
-  root: {
-    "& > *": {
-      margin: theme.spacing(1),
-      width: "25ch",
-    },
-    bigField: {
-      height: "50px",
-    },
-  },
-}));
-
 export default function Contacts() {
-  const classes = useStyles();
 
   const [validation, setValidation] = useState(false)
 
@@ -93,7 +79,6 @@ export default function Contacts() {
                   <TextField
                     id="standard-basic"
                     name="message"
-                    className={classes.bigField}
                     multiline
                     maxRows={5}
                     label="Message"
