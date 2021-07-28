@@ -2,7 +2,7 @@ import NavBar from "../components/navbar/Navbar";
 import Contact from "../components/contact/contact";
 import ContactInfo from "../components/contact-info/contact-info";
 import TextField from "@material-ui/core/TextField";
-import { makeStyles } from "@material-ui/core/styles";
+import { makeStyles } from "@material-ui/styles";
 import { useState } from "react";
 
 const useStyles = makeStyles((theme) => ({
