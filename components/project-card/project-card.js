@@ -1,4 +1,4 @@
-import Image from 'next/image'
+import Link from 'next/dist/client/link'
 import cstyle from './pcard-style.js'
 
 export default function PCard(props) {
@@ -14,7 +14,7 @@ export default function PCard(props) {
             </style>
 
             <div className="card" style={{ backgroundColor: colors[i] }}>
-                <a href={value.path} target="_blank">
+                <Link href={value.path} target="_blank">
                     <div className={value.cName}>
                         <h1 className='c-title'>{value.title}</h1>
                         <p className='c-body'>
@@ -25,7 +25,7 @@ export default function PCard(props) {
                             Click for more
                         </h5>
                     </div>
-                </a>
+                </Link>
             </div>
         </div>
     )

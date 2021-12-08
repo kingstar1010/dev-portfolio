@@ -1,25 +1,26 @@
+import type { NextPage } from "next";
 import NavBar from "../components/navbar/Navbar";
 import Contact from "../components/contact/contact";
 import ContactInfo from "../components/contact-info/contact-info";
-import TextField from "@material-ui/core/TextField";
+import { TextField } from "@mui/material";
 import { useState } from "react";
+import Link from "next/link";
 
-export default function Contacts() {
-
-  const [validation, setValidation] = useState(false)
+const Contacts: NextPage = () => {
+  const [validation, setValidation] = useState(false);
 
   // Is called on click event of Submit button
   const validate = () => {
     // Changes the current state of validation
-    setValidation(!validation)
+    setValidation(!validation);
 
     // Sets the current state of text const
     setText("Unfortunately, this feature is temporarily disabled :(");
-  }
+  };
 
-  const [text, setText] = useState("Waiting...")
+  const [text, setText] = useState("Waiting...");
 
-  function sendEmail(e) {
+  function sendEmail(e: any) {
     console.log("Send email function called");
   }
 
@@ -40,9 +41,7 @@ export default function Contacts() {
               </div>
             </div>
             <div className="contactForm">
-
-              <div style={{ display: validation ? 'none' : 'initial' }}>
-
+              <div style={{ display: validation ? "none" : "initial" }}>
                 <h1>Send a Message</h1>
 
                 <div className="imputs">
@@ -89,14 +88,19 @@ export default function Contacts() {
                   />
                 </div>
 
-                <input type="button" value="Send" className="send-message" onClick={validate} />
+                <input
+                  type="button"
+                  value="Send"
+                  className="send-message"
+                  onClick={validate}
+                />
               </div>
 
-              <div style={{ display: validation ? 'initial' : 'none' }}>
-                <div className='validation' >
+              <div style={{ display: validation ? "initial" : "none" }}>
+                <div className="validation">
                   <h1>Thank you for contacting me.</h1>
-                  <h2 style={{ color: '#ff0000' }}>{text}</h2>
-                  <a href='/'>Return to home page</a>
+                  <h2 style={{ color: "#ff0000" }}>{text}</h2>
+                  <Link href="/">Return to home page</Link>
                 </div>
               </div>
             </div>
@@ -105,4 +109,6 @@ export default function Contacts() {
       </form>
     </div>
   );
-}
+};
+
+export default Contacts;

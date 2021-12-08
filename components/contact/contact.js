@@ -1,6 +1,7 @@
-import { motion } from "framer-motion";
+import { motion } from 'framer-motion';
 import Data from '../../data/ContactData'
 import style from './style.js'
+import Link from 'next/dist/client/link'
 
 export default function Contact() {
     return (
@@ -13,11 +14,11 @@ export default function Contact() {
                     className={item.cName} key={index}
                     whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}
                 >
-                    <a className={item.title} href={item.path} target="_blank"  >
+                    <Link className={item.title} href={item.path} target="_blank">
                         <div className={item.title}>
                             {item.icon}
                         </div>
-                    </a>
+                    </Link>
                 </motion.div>
             ))}
         </div>

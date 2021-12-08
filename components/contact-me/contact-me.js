@@ -1,6 +1,7 @@
 import style from './style.js'
 import * as FaIcons from 'react-icons/fa';
 
+
 export default function ContactMe() {
     return (
         <div className='contact-me'>

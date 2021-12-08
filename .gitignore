@@ -32,3 +32,10 @@ yarn-error.log*
 
 # vercel
 .vercel
+
+# typescript
+*.tsbuildinfo
+
+# macOS
+.DS_Store
+.env
