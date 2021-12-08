@@ -1,5 +1,6 @@
 import style from './style.js'
 import * as FaIcons from 'react-icons/fa';
+import Link from 'next/link'
 
 
 export default function ContactMe() {
@@ -8,12 +9,14 @@ export default function ContactMe() {
             <style jsx global>
                 {style}
             </style>
-            <a href='/contacts'>
-                <div className='cm-icon'>
-                    <FaIcons.FaRegEnvelope />
-                </div>
-                <h1 className='cm-text'>Contact me</h1>
-            </a>
+            <Link href='/contacts' >
+                <a>
+                    <div className='cm-icon'>
+                        <FaIcons.FaRegEnvelope />
+                     </div>
+                    <h1 className='cm-text'>Contact me</h1>
+                </a>
+            </Link>
         </div>
     )
 }

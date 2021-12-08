@@ -17,7 +17,7 @@ export default function Footer() {
                 </div>
                 <div className='footer-av'>
                     <h1>Curent availability</h1>
-                    <p>I am a student and currently, I'm looking for an internship but I’ll be happy to discuss new opportunities. Let’s get in touch!</p>
+                    <p>I am a student and currently, I{'\&#39'}m looking for an internship but I’ll be happy to discuss new opportunities. Let’s get in touch!</p>
                 </div>
                 <div className='footer-fm'>
                     <h1 style={{ marginBottom: '5px', marginLeft: '15px' }}>Follow me on</h1>

@@ -11,7 +11,7 @@ export default function Tabout() {
             <p>
                 My name is Albert-Andrei Moldovanu, I was born and raised in a small,
                 but very beautiful Eastern European country, Moldova. Currently,
-                I'm studying Software Engineering at VIA University College in Denmark.
+                I{'\&#39'}m studying Software Engineering at VIA University College in Denmark.
                 I specialize in responsive websites, web applications, and back-end.
             </p>
             <h5>

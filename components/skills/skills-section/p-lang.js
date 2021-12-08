@@ -1,5 +1,6 @@
 import style from './style.js'
 import PBar from '../../progress-bar/PBar'
+import Image from "next/image";
 
 export default function PLang(props) {
 
@@ -7,7 +8,7 @@ export default function PLang(props) {
 
     return (
         <div className='p-lang'>
-            <img src={value.path} alt='image'></img>
+            <Image src={value.path} alt='image'/>
             <p>{value.title}</p>
             <PBar value={value} key={i} />
         </div>

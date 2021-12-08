@@ -46,7 +46,7 @@ export const MenuItem = (props) => {
         </IconContext.Provider>
       </div>
       {/* <div className="text-placeholder" style={style} /> */}
-      <Link href={value.path}>
+      <Link href={value.path} passHref>
         <div>
           <a className="nav-title" style={{ color: 'white' }}>{value.title}</a>
         </div>

@@ -1,5 +1,6 @@
 import style from './style.js'
 import { useState, useEffect, useRef } from 'react'
+import Image from "next/image";
 
 export default function Pbar(props) {
 
@@ -51,7 +52,7 @@ export default function Pbar(props) {
                     </div>
                 </div>
                 <div className='pb-title'>
-                    <img src={value.path} alt='progress-bar image'></img>
+                    <Image src={value.path} alt='progress-bar image'/>
                     <p>{value.title}</p>
                 </div>
             </div>
