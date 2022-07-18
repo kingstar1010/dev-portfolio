@@ -38,7 +38,7 @@ const FloatingCard: React.FC<FloatingCardProps> = ({
         <HoverCard.Root>
           <HoverCard.Trigger>
             <div style={{ width: '100%', height: '100%' }}>
-              <Link href={'/'}>
+              <Link href={'/'} as={'/'}>
                 <a>
                   <Icon
                     id={darkMode ? icon : icon + 'Light'}

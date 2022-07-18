@@ -14,9 +14,8 @@ import { DarkMode } from '@lib/dark-mode';
 import Switch from '@components/Switch';
 import { ParallaxProvider } from 'react-scroll-parallax';
 import Footer from '@components/Navigation/Footer';
-import { SessionProvider } from 'next-auth/react';
 
-function MyApp({ Component, pageProps: { session, ...pageProps } }: AppProps) {
+function MyApp({ Component, pageProps: { ...pageProps } }: AppProps) {
   // Hooks
   const router = useRouter();
 
@@ -38,7 +37,6 @@ function MyApp({ Component, pageProps: { session, ...pageProps } }: AppProps) {
   }, [router.events]);
 
   return (
-    <SessionProvider session={session}>
       <DarkMode.Provider value={{ darkMode, setDarkMode }}>
         <ThemeProvider theme={theme}>
           <GlobalStyle />
@@ -78,7 +76,6 @@ function MyApp({ Component, pageProps: { session, ...pageProps } }: AppProps) {
           </ParallaxProvider>
         </ThemeProvider>
       </DarkMode.Provider>
-    </SessionProvider>
   );
 }
 

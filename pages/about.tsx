@@ -46,7 +46,7 @@ const About: NextPage = () => {
               \nI see myself as an enthusiastic, hard-working, and creative person. As a fast learner, I am constantly looking for new challenges that push me to be a better version of myself.`}
           </Typography>
 
-          <Link passHref href={'/contact'}>
+          <Link href={'/contact'} as={'/contact'}>
             <a>
               <Typography
                 align="left"
