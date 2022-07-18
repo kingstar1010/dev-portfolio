@@ -70,7 +70,7 @@ export const LinkContent = styled.a<{ darkMode?: boolean }>`
   }
 `;
 
-export const IconWrapper = styled.div`
+export const IconWrapper = styled.span`
   margin-left: 30px;
 
   ${({ theme }) => theme.breakpoints.maxMd} {

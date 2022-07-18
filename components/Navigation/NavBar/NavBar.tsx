@@ -12,7 +12,7 @@ const NavBar: React.FC = () => {
   return (
     <Styles.NavigationContaier>
       <Styles.LogoCont>
-        <Link href="/">
+        <Link href="/" as={'/'}>
           <a className="logo">
             <Icon
               id="logo"

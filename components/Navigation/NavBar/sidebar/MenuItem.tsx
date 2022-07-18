@@ -39,12 +39,10 @@ export const MenuItem: React.FC<MenuProps> = ({ value }: MenuProps) => {
       <div className="icon-placeholder" style={{ border: `2px solid white` }}>
         {/* {value.icon} */}
       </div>
-      <Link href={value.path} passHref>
-        <div>
+      <Link href={value.path} as={value.path}>
           <a className="nav-title" style={{ color: 'white' }}>
             {value.title}
           </a>
-        </div>
       </Link>
     </motion.li>
   );
