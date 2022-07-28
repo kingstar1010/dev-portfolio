@@ -6,6 +6,7 @@ import { useDarkMode } from '../../../lib/dark-mode';
 import * as Styles from './Styles';
 import useMobileDetect from '../../../lib/use-mobile-detect';
 import { useEffect, useState } from 'react';
+import SideBar from './SideBar/SideBar';
 
 const NavBar: React.FC = () => {
   // Hooks
@@ -31,7 +32,7 @@ const NavBar: React.FC = () => {
           </a>
         </Link>
       </Styles.LogoCont>
-      <TopBar />
+      {isMobile ? <SideBar /> : <TopBar />}
     </Styles.NavigationContaier>
   );
 };
