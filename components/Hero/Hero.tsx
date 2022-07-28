@@ -61,29 +61,30 @@ const Hero: React.FC<HeroProps> = ({ onClick }) => {
             </Typography>
           </Style.Button>
 
-          <a href={'/files/CV.pdf'} rel="noreferrer" target="_blank">
-            <Style.Button
-              hovered={hovered}
-              darkMode={darkMode}
-              onMouseEnter={() => setHovered(true)}
-              onMouseLeave={() => setHovered(false)}
+          <Style.Button
+            href={'/files/CV.pdf'}
+            rel="noreferrer"
+            target="_blank"
+            hovered={hovered}
+            darkMode={darkMode}
+            onMouseEnter={() => setHovered(true)}
+            onMouseLeave={() => setHovered(false)}
+          >
+            <Typography
+              font="normal"
+              color={
+                darkMode
+                  ? hovered
+                    ? theme.colors.grey9
+                    : theme.colors.grey1
+                  : hovered
+                  ? theme.colors.grey1
+                  : theme.colors.grey9
+              }
             >
-              <Typography
-                font="normal"
-                color={
-                  darkMode
-                    ? hovered
-                      ? theme.colors.grey9
-                      : theme.colors.grey1
-                    : hovered
-                    ? theme.colors.grey1
-                    : theme.colors.grey9
-                }
-              >
-                Download CV
-              </Typography>
-            </Style.Button>
-          </a>
+              Download CV
+            </Typography>
+          </Style.Button>
         </Style.Helpers>
       </Style.Content>
       <Style.SceneContaier>

@@ -6,19 +6,22 @@ interface LottieProps {
   id: string;
   width?: number;
   height?: number;
-  onAnimationConplete?: () => void;
+  onAnimationComplete?: () => void;
 }
 
 import notFoundLottie from '../../public/assets/lotties/404.json';
 import internalErrorLottie from '../../public/assets/lotties/500.json';
 import playLottie from '../../public/assets/lotties/play.json';
 import swipeLottie from '../../public/assets/lotties/swipe.json';
+import plane from '../../public/assets/lotties/sent.json';
+import loadingLight from '../../public/assets/lotties/loading_light.json';
+import loadingDark from '../../public/assets/lotties/loading_dark.json';
 
 const LottieComp: React.FC<LottieProps> = ({
   id,
   width,
   height,
-  onAnimationConplete = () => {},
+  onAnimationComplete: onAnimationComplete = () => {},
 }: LottieProps): JSX.Element | null => {
   const data: any = {
     notFound: {
@@ -30,6 +33,7 @@ const LottieComp: React.FC<LottieProps> = ({
           // preserveAspectRatio: "xMidYMid slice",
         },
       },
+      segments: [],
       width: 500,
       height: 300,
     },
@@ -42,6 +46,7 @@ const LottieComp: React.FC<LottieProps> = ({
           // preserveAspectRatio: "xMidYMid slice",
         },
       },
+      segments: [],
       width: 500,
       height: 300,
     },
@@ -51,6 +56,7 @@ const LottieComp: React.FC<LottieProps> = ({
         autoplay: true,
         animationData: playLottie,
       },
+      segments: [],
       width: 400,
       height: 400,
     },
@@ -60,8 +66,40 @@ const LottieComp: React.FC<LottieProps> = ({
         autoplay: true,
         animationData: swipeLottie,
       },
+      segments: [],
       width: 96,
       height: 64,
+    },
+    plane: {
+      content: {
+        loop: false,
+        autoplay: true,
+        animationData: plane,
+      },
+      // segments: [35, 90],
+      segments: [],
+      width: 128,
+      height: 128,
+    },
+    loadingLight: {
+      content: {
+        loop: true,
+        autoplay: true,
+        animationData: loadingLight,
+      },
+      segments: [],
+      width: 300,
+      height: 300,
+    },
+    loadingDark: {
+      content: {
+        loop: true,
+        autoplay: true,
+        animationData: loadingDark,
+      },
+      segments: [],
+      width: 300,
+      height: 300,
     },
   };
 
@@ -77,11 +115,12 @@ const LottieComp: React.FC<LottieProps> = ({
         width={lottie.width}
         height={lottie.height}
         speed={lottie.speed || 1}
+        segments={lottie.segments}
         eventListeners={[
           {
             eventName: 'complete',
             callback: () => {
-              onAnimationConplete();
+              onAnimationComplete();
             },
           },
         ]}

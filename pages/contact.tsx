@@ -46,7 +46,12 @@ const Contact: NextPage<ContactsProps> = ({ keys }) => {
                 <Typography align="left">{contact.label}</Typography>
               </ContactItem>
             ) : (
-              <Link key={contact.title} href={contact.path} as={contact.path}>
+              <Link
+                key={contact.title}
+                href={contact.path}
+                as={contact.path}
+                passHref
+              >
                 <a target="_blank" rel="noopener noreferrer">
                   <ContactItem>
                     <IconContainer>
