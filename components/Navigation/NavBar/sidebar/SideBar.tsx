@@ -7,7 +7,7 @@ import Switch from '@components/Switch';
 import { useDarkMode } from '@lib/dark-mode';
 import { SideBarBackground, SwitchWrapper } from './SideBarStyles';
 
-export const SideBar: React.FC = () => {
+const SideBar: React.FC = () => {
   // Hooks
   const [isOpen, setOpen] = useState(false);
   const containerRef = useRef(null);
