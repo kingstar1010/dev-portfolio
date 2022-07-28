@@ -1,12 +1,12 @@
 import Link from 'next/link';
 import theme from '../../../theme';
 import Icon from '../../Icon';
-import SideBar from './SideBar/SideBar';
 import TopBar from './TopBar/TopBar';
 import { useDarkMode } from '../../../lib/dark-mode';
 import * as Styles from './Styles';
 import useMobileDetect from '../../../lib/use-mobile-detect';
 import { useEffect, useState } from 'react';
+import SideBar from './SideBar/SideBar';
 
 const NavBar: React.FC = () => {
   // Hooks
