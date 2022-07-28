@@ -2,6 +2,7 @@ import * as React from 'react';
 import { motion } from 'framer-motion';
 import { MenuItem } from './MenuItem';
 import Data from '@data/NavigationData';
+import { SetStateAction } from 'react';
 
 const variants = {
   open: {
@@ -12,10 +13,16 @@ const variants = {
   },
 };
 
-export const Navigation = () => (
-  <motion.ul variants={variants}>
-    {Data.map((item, index) => (
-      <MenuItem value={item} key={index} />
-    ))}
-  </motion.ul>
-);
+export interface NavigationProps {
+  onClick: (e?: any) => void;
+}
+
+export const Navigation: React.FC<NavigationProps> = ({ onClick }) => {
+  return (
+    <motion.ul variants={variants}>
+      {Data.filter((item) => item.title !== 'CV').map((item, index) => (
+        <MenuItem value={item} key={index} onClick={onClick} />
+      ))}
+    </motion.ul>
+  );
+};

@@ -69,7 +69,7 @@ export const Helpers = styled.div`
   }
 `;
 
-export const Button = styled.button<{
+export const Button = styled.a<{
   darkMode?: Boolean;
   hovered?: Boolean;
   projects?: Boolean;

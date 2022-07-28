@@ -29,6 +29,9 @@ import { Location } from './icons/common/Location';
 import { Development } from './icons/skills/Development';
 import { Design } from './icons/skills/Design';
 import { Tools } from './icons/skills/Tools';
+import { Home } from './icons/navigation/Home';
+import { About } from './icons/navigation/About';
+import { Contact } from './icons/navigation/Contact';
 
 interface IconProps {
   id: string;
@@ -193,6 +196,21 @@ const Icon: React.FC<IconProps> = ({
       content: <Tools color={color} />,
       width: 40,
       height: 48,
+    },
+    home: {
+      content: <Home color={color} />,
+      width: 22,
+      height: 19,
+    },
+    about: {
+      content: <About color={color} />,
+      width: 8,
+      height: 20,
+    },
+    contact: {
+      content: <Contact color={color} />,
+      width: 19,
+      height: 19,
     },
   };
 

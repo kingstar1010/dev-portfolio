@@ -7,7 +7,7 @@ const Template: React.FC = () => {
   return (
     <Styles.SocialMediaLinks>
       {SocialMediaData.map((value, index) => (
-        <Link href={value.link} key={index}>
+        <Link href={value.link} key={index} passHref>
           <a target="_blank" rel="noreferrer">
             <Styles.SocialItem>
               <Icon id={value.title} width={27} height={27} />

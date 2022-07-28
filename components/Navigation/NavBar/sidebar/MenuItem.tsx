@@ -1,9 +1,21 @@
 import * as React from 'react';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
+import { useDarkMode } from '@lib/dark-mode';
+import Typography from '@components/Typography';
+import theme from '@theme/index';
+import Icon from '@components/Icon';
 
 export interface MenuProps {
-  value: any;
+  onClick: (e?: any) => void;
+  value: {
+    title: string;
+    path: string;
+    icon?: string;
+    target: string;
+    iconWidth?: number;
+    iconHeight?: number;
+  };
 }
 
 const variants = {
@@ -27,7 +39,12 @@ const variants = {
   },
 };
 
-export const MenuItem: React.FC<MenuProps> = ({ value }: MenuProps) => {
+export const MenuItem: React.FC<MenuProps> = ({
+  value,
+  onClick,
+}: MenuProps) => {
+  const { darkMode } = useDarkMode();
+
   return (
     <motion.li
       variants={variants}
@@ -36,13 +53,27 @@ export const MenuItem: React.FC<MenuProps> = ({ value }: MenuProps) => {
       //@ts-ignore
       href={value.path}
     >
-      <div className="icon-placeholder" style={{ border: `2px solid white` }}>
-        {/* {value.icon} */}
+      <div
+        className="icon-placeholder"
+        style={{ border: `2px solid ${darkMode ? 'white' : 'black'}` }}
+      >
+        <Icon
+          id={value.icon || ''}
+          width={value.iconWidth}
+          height={value.iconHeight}
+        />
       </div>
-      <Link href={value.path} as={value.path}>
-          <a className="nav-title" style={{ color: 'white' }}>
+      <Link href={value.path} passHref>
+        <a target={value.target} onClick={onClick}>
+          <Typography
+            color={darkMode ? theme.colors.white : theme.colors.black}
+            align="left"
+            font="bold"
+            size={theme.fontSizes.display}
+          >
             {value.title}
-          </a>
+          </Typography>
+        </a>
       </Link>
     </motion.li>
   );

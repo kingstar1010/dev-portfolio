@@ -2,27 +2,32 @@ const SidebarData = [
   {
     title: 'Home',
     path: '/',
-    icon: '',
-    cName: 'nav-text',
+    icon: 'home',
+    target: '_self',
+    iconWidth: 18,
+    iconHeight: 16,
   },
   {
-    title: 'About Me',
+    title: 'About',
     path: '/about',
-    icon: '',
-    cName: 'nav-text',
+    icon: 'about',
+    target: '_self',
+    iconWidth: 7,
+    iconHeight: 18,
   },
   {
     title: 'Contact',
     path: '/contact',
-    icon: '',
-    cName: 'nav-text',
+    icon: 'contact',
+    target: '_self',
+    iconWidth: 15,
+    iconHeight: 15,
   },
-  // {
-  //   title: 'Chess',
-  //   path: '/chess',
-  //   icon: '',
-  //   cName: 'nav-text',
-  // },
+  {
+    title: 'CV',
+    path: '/files/CV.pdf',
+    target: '_blank',
+  },
 ];
 
 export default SidebarData;
