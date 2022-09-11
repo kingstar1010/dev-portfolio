@@ -11,14 +11,9 @@ import Lottie from '@components/Lottie';
 
 export interface ContactMeProps {
   theme: DefaultTheme;
-  keys: {
-    MY_SERVICE_ID: string;
-    MY_TEMPLATE_ID: string;
-    MY_PUBLIC_KEY: string;
-  };
 }
 
-const ContactMe = withTheme((({ theme, keys }) => {
+const ContactMe = withTheme((({ theme }) => {
   // Hooks
   const { darkMode } = useDarkMode();
 
@@ -41,23 +36,23 @@ const ContactMe = withTheme((({ theme, keys }) => {
     if (form.current) {
       // if all fields are filled out send email else show error
       if (name && mail && subject && message) {
-        // emailjs
-        //   .sendForm(
-        //     keys.MY_SERVICE_ID,
-        //     keys.MY_TEMPLATE_ID,
-        //     form.current,
-        //     keys.MY_PUBLIC_KEY,
-        //   )
-        //   .then(
-        //     (result) => {
-        //       setLoading(false);
-        //       setValidation(true);
-        //     },
-        //     (error) => {
-        //       setValidation(true);
-        //       setError(error.text);
-        //     },
-        //   );
+        emailjs
+          .sendForm(
+            process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
+            process.env.NEXT_PUBLIC_MY_TEMPLATE_ID!,
+            form.current,
+            process.env.NEXT_PUBLIC_MY_PUBLIC_KEY!,
+          )
+          .then(
+            (result) => {
+              setLoading(false);
+              setValidation(true);
+            },
+            (error) => {
+              setValidation(true);
+              setError(error.text);
+            },
+          );
 
         setTimeout(() => {
           setLoading(false);
@@ -274,19 +269,5 @@ const ContactMe = withTheme((({ theme, keys }) => {
     </Styles.Form>
   );
 }) as React.FC<ContactMeProps>);
-
-export const getStaticProps = async () => {
-  const keys = {
-    MY_SERVICE_ID: process.env.EMAILJS_SERVICE_ID,
-    MY_TEMPLATE_ID: process.env.EMAILJS_TEMPLATE_ID,
-    MY_PUBLIC_KEY: process.env.EMAILJS_PUBLIC_KEY,
-  };
-
-  return {
-    props: {
-      keys,
-    },
-  };
-};
 
 export default ContactMe;
