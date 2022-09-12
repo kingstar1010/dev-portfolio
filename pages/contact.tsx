@@ -9,15 +9,9 @@ import Link from 'next/link';
 import ContactsData from '@data/ContactsData';
 import { useDarkMode } from '@lib/dark-mode';
 
-interface ContactsProps {
-  keys: {
-    MY_SERVICE_ID: string;
-    MY_TEMPLATE_ID: string;
-    MY_PUBLIC_KEY: string;
-  };
-}
+interface ContactsProps {}
 
-const Contact: NextPage<ContactsProps> = ({ keys }) => {
+const Contact: NextPage<ContactsProps> = () => {
   const { darkMode } = useDarkMode();
 
   return (
@@ -76,23 +70,9 @@ const Contact: NextPage<ContactsProps> = ({ keys }) => {
         <SocialMediaLinks />
       </ContactInformation>
 
-      <ContactMe keys={keys} />
+      <ContactMe />
     </Main>
   );
-};
-
-export const getStaticProps = async () => {
-  const keys = {
-    MY_SERVICE_ID: process.env.EMAILJS_SERVICE_ID,
-    MY_TEMPLATE_ID: process.env.EMAILJS_TEMPLATE_ID,
-    MY_PUBLIC_KEY: process.env.EMAILJS_PUBLIC_KEY,
-  };
-
-  return {
-    props: {
-      keys,
-    },
-  };
 };
 
 export default Contact;
