@@ -19,11 +19,15 @@ const About: NextPage = () => {
     <Main>
       <HeroContainer>
         <Image
+          priority
           src={darkMode ? lightHeroImage : barkHeroImage}
           alt="hello image"
           layout="intrinsic"
           placeholder="blur"
           objectFit="cover"
+          sizes="(min-width: 60em) 24vw,
+          (min-width: 28em) 45vw,
+          100vw"
         />
       </HeroContainer>
 
@@ -35,6 +39,9 @@ const About: NextPage = () => {
             layout="intrinsic"
             placeholder="blur"
             objectFit="cover"
+            sizes="(min-width: 60em) 24vw,
+            (min-width: 28em) 45vw,
+            100vw"
           />
         </ImageContainer>
 

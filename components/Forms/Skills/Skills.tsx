@@ -54,9 +54,9 @@ const Skills: React.FC = () => {
 
       <Styles.MainContainer>
         <Styles.IconsContainer ref={icons.ref}>
-          {iconsData.map((skill, index) => (
+          {iconsData.map((skill) => (
             <FloatingCard
-              key={index}
+              key={skill.icon}
               left={skill.offsetLeft}
               bottom={skill.offsetBottom}
               {...skill}
@@ -65,8 +65,8 @@ const Skills: React.FC = () => {
         </Styles.IconsContainer>
 
         <>
-          {skillsData.map((skill, index) => (
-            <Styles.SkillContent key={index}>
+          {skillsData.map((skill) => (
+            <Styles.SkillContent key={skill.title}>
               <SkillCard {...skill} />
             </Styles.SkillContent>
           ))}
