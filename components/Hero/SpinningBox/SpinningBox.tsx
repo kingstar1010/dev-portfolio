@@ -2,6 +2,7 @@ import { MeshWobbleMaterial } from '@react-three/drei';
 import { ThreeElements, useFrame } from '@react-three/fiber';
 import { useSpring } from 'framer-motion';
 import React, { useRef, useState } from 'react';
+import { BufferGeometry, Material, Mesh } from 'three';
 
 export interface SpinningBoxProps {
   children?: React.ReactNode;
@@ -16,8 +17,7 @@ const SpinningBox: React.FC<SpinningBoxProps> = ({
   front = false,
   speed = 1,
 }: SpinningBoxProps) => {
-  // Hooks
-  const mesh = useRef<any>();
+  const mesh = useRef<Mesh<BufferGeometry, Material | Material[]>>(null);
 
   useFrame(
     // @ts-ignore
