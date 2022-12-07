@@ -44,37 +44,49 @@ class MyDocument extends Document {
           <meta name="format-detection" content="telephone=no" />
           <meta name="author" content="AAMoldovanu®" />
           <meta name="copyright" content="© 2021 Albert-Anderi Moldovanu" />
-          <meta name="title" content="Albert-Andrei Moldovanu" />
+
+          {/* <!-- Primary Meta Tags --> */}
+          <title>Albert-Andrei Moldovanu — Personal portfolio</title>
+          <meta
+            name="title"
+            content="Albert-Andrei Moldovanu — Personal portfolio"
+          />
           <meta
             name="description"
-            content="This website is my portfolio, here I share my projects, skills, contact information and a lot of usefull stuff. Feel free to take a look :D"
+            content="This website is my portfolio, here I share my projects, skills, contact information, and a lot of useful stuff. Feel free to take a look :D"
           />
           <meta name="image" content="https://aamoldovanu.com/preview.jpg" />
 
-          {/* <!-- Facebook Meta Tags --> */}
-          <meta property="og:url" content="https://aamoldovanu.com/" />
+          {/* <!-- Facebook --> */}
           <meta property="og:type" content="website" />
-          <meta property="og:title" content="Albert-Andrei Moldovanu" />
+          <meta property="og:url" content="https://aamoldovanu.com/" />
+          <meta
+            property="og:title"
+            content="Albert-Andrei Moldovanu — Personal portfolio"
+          />
           <meta
             property="og:description"
-            content="This website is my portfolio, here I share my projects, skills, contact information and a lot of usefull stuff. Feel free to take a look :D"
+            content="This website is my portfolio, here I share my projects, skills, contact information, and a lot of useful stuff. Feel free to take a look :D"
           />
           <meta
             property="og:image"
             content="https://aamoldovanu.com/preview.jpg"
           />
 
-          {/* <!-- Twitter Meta Tags --> */}
-          <meta name="twitter:card" content="summary_large_image" />
+          {/* <!-- Twitter --> */}
+          <meta property="twitter:card" content="summary_large_image" />
+          <meta property="twitter:url" content="https://metatags.io/" />
           <meta property="twitter:domain" content="aamoldovanu.com" />
-          <meta property="twitter:url" content="https://aamoldovanu.com/" />
-          <meta name="twitter:title" content="Albert-Andrei Moldovanu" />
           <meta
-            name="twitter:description"
-            content="This website is my portfolio, here I share my projects, skills, contact information and a lot of usefull stuff. Feel free to take a look :D"
+            property="twitter:title"
+            content="Albert-Andrei Moldovanu — Personal portfolio"
           />
           <meta
-            name="twitter:image"
+            property="twitter:description"
+            content="This website is my portfolio, here I share my projects, skills, contact information, and a lot of useful stuff. Feel free to take a look :D"
+          />
+          <meta
+            property="twitter:image"
             content="https://aamoldovanu.com/preview.jpg"
           />
 
@@ -89,7 +101,7 @@ class MyDocument extends Document {
           <link
             href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
             rel="preload"
-            as='font'
+            as="font"
           ></link>
         </Head>
         <body>
