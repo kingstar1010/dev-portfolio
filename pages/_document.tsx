@@ -46,11 +46,8 @@ class MyDocument extends Document {
           <meta name="copyright" content="© 2021 Albert-Anderi Moldovanu" />
 
           {/* <!-- Primary Meta Tags --> */}
-          <title>Albert-Andrei Moldovanu — Personal portfolio</title>
-          <meta
-            name="title"
-            content="Albert-Andrei Moldovanu — Personal portfolio"
-          />
+          <title>Albert-Andrei Moldovanu</title>
+          <meta name="title" content="Albert-Andrei Moldovanu" />
           <meta
             name="description"
             content="This website is my portfolio, here I share my projects, skills, contact information, and a lot of useful stuff. Feel free to take a look :D"
@@ -60,10 +57,7 @@ class MyDocument extends Document {
           {/* <!-- Facebook --> */}
           <meta property="og:type" content="website" />
           <meta property="og:url" content="https://aamoldovanu.com/" />
-          <meta
-            property="og:title"
-            content="Albert-Andrei Moldovanu — Personal portfolio"
-          />
+          <meta property="og:title" content="Albert-Andrei Moldovanu" />
           <meta
             property="og:description"
             content="This website is my portfolio, here I share my projects, skills, contact information, and a lot of useful stuff. Feel free to take a look :D"
@@ -77,10 +71,7 @@ class MyDocument extends Document {
           <meta property="twitter:card" content="summary_large_image" />
           <meta property="twitter:url" content="https://metatags.io/" />
           <meta property="twitter:domain" content="aamoldovanu.com" />
-          <meta
-            property="twitter:title"
-            content="Albert-Andrei Moldovanu — Personal portfolio"
-          />
+          <meta property="twitter:title" content="Albert-Andrei Moldovanu" />
           <meta
             property="twitter:description"
             content="This website is my portfolio, here I share my projects, skills, contact information, and a lot of useful stuff. Feel free to take a look :D"
