@@ -62,7 +62,7 @@ const Hero: React.FC<HeroProps> = ({ onClick }) => {
           </Style.Button>
 
           <Style.Button
-            href={'/files/CV.pdf'}
+            href="https://drive.google.com/uc?export=view&id=1Vcri8z3FIjRhF7YcACiWCZO2fatWpmuj"
             rel="noreferrer"
             target="_blank"
             hovered={hovered}

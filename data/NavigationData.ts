@@ -25,7 +25,7 @@ const SidebarData = [
   },
   {
     title: 'CV',
-    path: '/files/CV.pdf',
+    path: 'https://drive.google.com/uc?export=view&id=1Vcri8z3FIjRhF7YcACiWCZO2fatWpmuj',
     target: '_blank',
   },
 ];
