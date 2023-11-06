@@ -21,15 +21,13 @@ const NavBar: React.FC = () => {
   return (
     <Styles.NavigationContaier>
       <Styles.LogoCont>
-        <Link href="/">
-          <a className="logo">
-            <Icon
-              id="logo"
-              width={50}
-              height={55}
-              color={darkMode ? theme.colors.grey8 : theme.colors.black}
-            />
-          </a>
+        <Link href="/" className="logo">
+          <Icon
+            id="logo"
+            width={50}
+            height={55}
+            color={darkMode ? theme.colors.grey8 : theme.colors.black}
+          />
         </Link>
       </Styles.LogoCont>
       {isMobile ? <SideBar /> : <TopBar />}

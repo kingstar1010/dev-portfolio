@@ -12,16 +12,14 @@ export const SideBar: React.FC = () => {
   return (
     <Styles.PathContainer>
       {Data.filter((item) => item.title !== 'Home').map((item, index) => (
-        <Link key={index} href={item.path} passHref>
-          <a target={item.target}>
-            <Typography
-              color={darkMode ? theme.colors.white : theme.colors.black}
-              align="left"
-              size={theme.fontSizes.subHeader}
-            >
-              {item.title}
-            </Typography>
-          </a>
+        <Link key={index} href={item.path}>
+          <Typography
+            color={darkMode ? theme.colors.white : theme.colors.black}
+            align="left"
+            size={theme.fontSizes.subHeader}
+          >
+            {item.title}
+          </Typography>
         </Link>
       ))}
       <Switch checked={darkMode} onChange={setDarkMode} />

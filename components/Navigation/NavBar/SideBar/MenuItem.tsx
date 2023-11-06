@@ -63,7 +63,7 @@ export const MenuItem: React.FC<MenuProps> = ({
           height={value.iconHeight}
         />
       </div>
-      <Link href={value.path} passHref>
+      <Link href={value.path} passHref legacyBehavior>
         <a target={value.target} onClick={onClick}>
           <Typography
             color={darkMode ? theme.colors.white : theme.colors.black}

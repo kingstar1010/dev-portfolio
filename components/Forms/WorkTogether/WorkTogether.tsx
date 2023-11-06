@@ -52,7 +52,7 @@ const WorkTogether: React.FC = () => {
         Need some help?
       </Typography>
 
-      <Link href="/contact" passHref>
+      <Link href="/contact">
         <Styles.LinkContent darkMode={darkMode}>
           <Typography
             font="bold"

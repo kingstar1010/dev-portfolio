@@ -44,24 +44,21 @@ const Contact: NextPage<ContactsProps> = () => {
                 key={contact.title}
                 href={contact.path}
                 as={contact.path}
-                passHref
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                <a target="_blank" rel="noopener noreferrer">
-                  <ContactItem>
-                    <IconContainer>
-                      <Icon
-                        id={contact.icon}
-                        color={
-                          darkMode ? theme.colors.white : theme.colors.black
-                        }
-                        width={contact.icon === 'email' ? 12 : 18}
-                        height={contact.icon === 'email' ? 16 : 17}
-                      />
-                    </IconContainer>
+                <ContactItem>
+                  <IconContainer>
+                    <Icon
+                      id={contact.icon}
+                      color={darkMode ? theme.colors.white : theme.colors.black}
+                      width={contact.icon === 'email' ? 12 : 18}
+                      height={contact.icon === 'email' ? 16 : 17}
+                    />
+                  </IconContainer>
 
-                    <Typography align="left">{contact.label}</Typography>
-                  </ContactItem>
-                </a>
+                  <Typography align="left">{contact.label}</Typography>
+                </ContactItem>
               </Link>
             ),
           )}

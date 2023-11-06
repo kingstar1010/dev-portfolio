@@ -53,13 +53,11 @@ const About: NextPage = () => {
               \nI see myself as an enthusiastic, hard-working, and creative person. As a fast learner, I am constantly looking for new challenges that push me to be a better version of myself.`}
           </Typography>
 
-          <Link href={'/contact'} as={'/contact'} passHref>
-            <a>
-              <Typography
-                align="left"
-                color={theme.colors.blue}
-              >{`\nLet\'s make something special together!`}</Typography>
-            </a>
+          <Link href={'/contact'} as={'/contact'}>
+            <Typography
+              align="left"
+              color={theme.colors.blue}
+            >{`\nLet\'s make something special together!`}</Typography>
           </Link>
         </Content>
       </ContentContainer>

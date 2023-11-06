@@ -38,14 +38,12 @@ const FloatingCard: React.FC<FloatingCardProps> = ({
         <HoverCard.Root>
           <HoverCard.Trigger>
             <div style={{ width: '100%', height: '100%' }}>
-              <Link href={'/'} as={'/'} passHref>
-                <a>
-                  <Icon
-                    id={darkMode ? icon : icon + 'Light'}
-                    width={iconSize}
-                    height={iconSize}
-                  />
-                </a>
+              <Link href={'/'} as={'/'}>
+                <Icon
+                  id={darkMode ? icon : icon + 'Light'}
+                  width={iconSize}
+                  height={iconSize}
+                />
               </Link>
             </div>
           </HoverCard.Trigger>

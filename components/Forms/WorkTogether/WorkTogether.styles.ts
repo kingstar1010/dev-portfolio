@@ -27,7 +27,7 @@ export const MainContaier = styled.div`
   }
 `;
 
-export const LinkContent = styled.a<{ darkMode?: boolean }>`
+export const LinkContent = styled.div<{ darkMode?: boolean }>`
   position: relative;
   display: flex;
   align-items: center;
