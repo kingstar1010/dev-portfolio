@@ -1,0 +1,75 @@
+[
+  {
+    "icon": "react",
+    "src": "/svg/skills/react.svg",
+    "offsetLeft": "20%",
+    "offsetBottom": "37%",
+    "iconSize": 200,
+    "overview": {
+      "title": "React.js",
+      "description": "React is a free and open-source front-end JavaScript library for building user interfaces based on UI components. It is maintained by Meta and a community of individual developers and companies."
+    }
+  },
+  {
+    "icon": "node",
+    "src": "/svg/skills/node.svg",
+    "iconSize": 140,
+    "offsetLeft": "10%",
+    "offsetBottom": "25%",
+    "delay": "1s",
+    "zIndex": 5,
+    "overview": {
+      "title": "Node.js",
+      "description": "Node.js is an open-source, cross-platform, back-end JavaScript runtime environment that runs on the V8 engine and executes JavaScript code outside a web browser."
+    }
+  },
+  {
+    "icon": "mongodb",
+    "src": "/svg/skills/mongodb.svg",
+    "iconSize": 100,
+    "offsetLeft": "35%",
+    "offsetBottom": "17%",
+    "delay": "0.2s",
+    "zIndex": 5,
+    "overview": {
+      "title": "MongoDB",
+      "description": "MongoDB is a source-available cross-platform document-oriented database program. Classified as a NoSQL database program, MongoDB uses JSON-like documents with optional schemas. MongoDB is developed by MongoDB Inc. and licensed under the Server Side Public License which is deemed non-free by several distributions."
+    }
+  },
+  {
+    "icon": "next",
+    "src": "/svg/skills/nextjs.svg",
+    "iconSize": 165,
+    "offsetLeft": "50%",
+    "offsetBottom": "27%",
+    "delay": "0.7s",
+    "overview": {
+      "title": "Next.js",
+      "description": "Next.js is an open-source web development framework built on top of Node.js enabling React-based web applications functionalities such as server-side rendering and generating static websites."
+    }
+  },
+  {
+    "icon": "aws",
+    "src": "/svg/skills/aws.svg",
+    "iconSize": 115,
+    "offsetLeft": "63%",
+    "offsetBottom": "20%",
+    "delay": "0.4s",
+    "overview": {
+      "title": "Amazon Web Services",
+      "description": "Amazon Web Services, Inc. is a subsidiary of Amazon that provides on-demand cloud computing platforms and APIs to individuals, companies, and governments, on a metered pay-as-you-go basis. These cloud computing web services provide distributed computing processing capacity and software tools via AWS server farms."
+    }
+  },
+  {
+    "icon": "firebase",
+    "src": "/svg/skills/firebase.svg",
+    "iconSize": 90,
+    "offsetLeft": "70%",
+    "offsetBottom": "50%",
+    "delay": "1.2s",
+    "overview": {
+      "title": "Firebase",
+      "description": "Firebase is a platform developed by Google for creating mobile and web applications. It was originally an independent company founded in 2011. In 2014, Google acquired the platform and it is now their flagship offering for app development."
+    }
+  }
+]

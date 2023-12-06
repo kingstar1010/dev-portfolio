@@ -1,0 +1,133 @@
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  background-color: white;
+  max-width: 1550px;
+  padding: 0px 130px 100px 130px;
+}
+
+.hero {
+  margin-top: 30vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  color: #4d4c4c;
+  font-family: var(--font-urbanist);
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  animation: fade-in 0.7s ease-out forwards;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.subtitle {
+  color: #818181;
+  text-align: center;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  max-width: 550px;
+  margin-top: 40px;
+  opacity: 0;
+  animation: fade-in-long 0.7s ease-out forwards;
+  animation-delay: 0.1s;
+}
+
+@keyframes fade-in-long {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 80px;
+  margin-top: 200px;
+  opacity: 0;
+  animation: fade-in-3 0.7s ease-out forwards;
+  animation-delay: 0.5s;
+}
+
+@keyframes fade-in-3 {
+  from {
+    opacity: 0;
+    transform: translateY(400px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 1301px) {
+  .wrapper {
+    padding: 0px 90px 100px 90px;
+  }
+}
+
+/* Tablet and Smaller Desktop */
+@media (min-width: 701px) and (max-width: 1200px) {
+  .wrapper {
+    padding: 0px 50px 100px 50px;
+  }
+
+  .projects {
+    width: 100%;
+    margin-top: 60px;
+    gap: 60px;
+  }
+}
+
+@media (max-width: 700px) {
+  .wrapper {
+    padding: 0px 30px 100px 30px;
+  }
+
+  .hero {
+    margin-top: 200px;
+  }
+
+  .title {
+    font-size: 2.25rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+    margin-top: 20px;
+  }
+
+  .projects {
+    width: 100%;
+    margin-top: 100px;
+    gap: 30px;
+  }
+}

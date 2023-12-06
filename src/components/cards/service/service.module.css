@@ -1,0 +1,82 @@
+.service {
+  width: 495px;
+  border-radius: 10px;
+  border: 1px solid #dddddd;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.title {
+  font-family: var(--font-urbanist);
+  font-style: normal;
+  font-size: 1.5rem;
+  line-height: 2.1rem;
+  font-weight: 500;
+}
+
+.description {
+  font-style: normal;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 400;
+  color: var(--grey-700-hex);
+}
+
+.subtitle {
+  font-style: normal;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 500;
+  color: #4d4c4c;
+}
+
+/* Tablet and Smaller Desktop */
+@media (min-width: 1001px) and (max-width: 1200px) {
+  .service {
+    width: 460px;
+  }
+}
+
+@media (min-width: 701px) and (max-width: 1000px) {
+  .service {
+    width: 100%;
+  }
+}
+
+@media (max-width: 700px) {
+  .service {
+    width: 100%;
+    flex-shrink: 0;
+    scroll-snap-align: center;
+    gap: 0px;
+    justify-content: space-between;
+    padding: 16px;
+  }
+
+  .title {
+    font-family: var(--font-urbanist);
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+  }
+
+  .description {
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 150%;
+    text-align: center;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    text-align: center;
+  }
+}

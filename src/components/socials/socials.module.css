@@ -1,0 +1,41 @@
+.socials {
+  display: flex;
+  gap: 16px;
+}
+
+.element {
+  overflow: hidden;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 1px solid #4d4c4c;
+  background-color: rgba(46, 46, 46, 0.4);
+  backdrop-filter: blur(12px);
+  transition: all 0.2s;
+  scale: 1;
+}
+
+.element:hover {
+  scale: 1.05;
+  background-color: rgba(71, 71, 71, 0.4);
+  animation: pulse-animation 1.2s;
+  transition: all 0.2s;
+}
+
+@keyframes pulse-animation {
+  0% {
+    box-shadow: 0 0 0 0px #4d4c4c;
+  }
+  100% {
+    box-shadow: 0 0 0 7px rgba(46, 46, 46, 0);
+  }
+}
+
+@media (max-width: 700px) {
+  .socials {
+    justify-content: center;
+  }
+}

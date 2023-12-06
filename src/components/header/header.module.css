@@ -1,0 +1,55 @@
+.title {
+  color: #4d4c4c;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5rem;
+  text-transform: uppercase;
+}
+
+.subtitle {
+  margin-top: 1rem;
+  color: var(--grey-800-hex);
+  font-family: var(--font-urbanist);
+  font-size: 4rem;
+  font-weight: 500;
+  font-style: normal;
+  line-height: normal;
+}
+
+.text {
+  margin-top: 1.5rem;
+  color: var(--grey-700-hex);
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5rem;
+}
+
+@media (max-width: 701px) {
+  .title {
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    text-align: center;
+  }
+
+  .subtitle {
+    margin-top: 5px;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-align: center;
+  }
+
+  .text {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+  }
+}
