@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "LinkedIn",
+    "icon": "/svg/socials/linked-in.svg",
+    "url": "https://www.linkedin.com/in/albert-andrei-moldovanu-0a8199209/"
+  },
+  {
+    "id": 1,
+    "name": "instagram",
+    "icon": "/svg/socials/instagram.svg",
+    "url": "https://www.instagram.com/m.albert_andrei/"
+  },
+  {
+    "id": 1,
+    "name": "facebook",
+    "icon": "/svg/socials/facebook.svg",
+    "url": "https://www.facebook.com/moldovanu.andrei.165/"
+  },
+  {
+    "id": 1,
+    "name": "github",
+    "icon": "/svg/socials/github.svg",
+    "url": "https://github.com/Albert-Andrei"
+  }
+]

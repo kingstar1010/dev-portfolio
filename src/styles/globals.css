@@ -1,0 +1,150 @@
+:root {
+  --max-width: 1100px;
+  --border-radius: 12px;
+  --foreground-rgb: 0, 0, 0;
+  --success-hex: #2ecd3e;
+  --grey-800-hex: #2e2e2e;
+  --grey-700-hex: #818181;
+  --grey-600-hex: #d9d9d9;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: black;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.blur {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  border-bottom: 1px solid #a5a5a520;
+}
+
+.active-link {
+  color: black !important;
+}
+
+.active-link:hover {
+  border-bottom: 1px solid black !important;
+  color: black !important;
+}
+
+.section {
+  background-color: white;
+  padding: 150px 130px 0px 130px;
+}
+
+.open {
+  animation: open-animation 0.5s forwards !important;
+}
+
+.close {
+  animation: close-animation 0.5s forwards !important;
+}
+
+.open-link {
+  animation: open-link-animation 0.5s forwards !important;
+}
+
+.close-link {
+  animation: close-link-animation 0.5s forwards !important;
+}
+
+nav li:nth-of-type(2) a {
+  animation-delay: 0.1s !important;
+}
+
+nav li:nth-of-type(3) a {
+  animation-delay: 0.2s !important;
+}
+
+.invert {
+  filter: invert(1);
+}
+
+/* TV screens */
+@media (min-width: 1550px) {
+  body {
+    contain: paint;
+  }
+}
+
+/* Small screens */
+@media (max-width: 1301px) {
+  .section {
+    padding: 120px 90px 0px 90px;
+  }
+}
+
+/* Tablet and Smaller Desktop */
+@media (min-width: 701px) and (max-width: 1200px) {
+  .section {
+    padding: 80px 50px 0px 50px;
+  }
+}
+
+@media (max-width: 700px) {
+  .active-link {
+    color: white !important;
+  }
+
+  .section {
+    padding: 80px 30px 0px 30px;
+  }
+}
+
+@keyframes open-animation {
+  0% {
+    clip-path: circle(0% at calc(100% - 40px) 30px);
+  }
+  100% {
+    clip-path: circle(150%);
+  }
+}
+
+@keyframes open-link-animation {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+@keyframes close-animation {
+  0% {
+    clip-path: circle(150%);
+  }
+  100% {
+    clip-path: circle(0% at 50% calc(100% - 124px));
+  }
+}
+
+@keyframes close-link-animation {
+  0% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+}

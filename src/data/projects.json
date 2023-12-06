@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "slug": "watch-hub-web",
+    "title": "WatcHub - Web",
+    "description": "The future of organizing your watch content. Explore our website to see how we brought the excitement having all your movies, series, anime and more well structured and organized.",
+    "imageSrc": "/images/projects/project_watchhub-web.jpg",
+    "previewUrl": "https://watchub-git-feat-landing-page-albert-andrei.vercel.app/",
+    "info": {
+      "client": "Nano",
+      "timeline": "4 weeks",
+      "services": "Design & Development",
+      "team": "2 people"
+    },
+    "data": {
+      "title": "Introducing WatchHub",
+      "description": "The future of watch content organization with WatcHub, a revolutionary movie watchlist app that is set to redefine the way you experience and discover films. This project represents the landing page that serves as your gateway to a world of cinematic wonders, enticing you with a sneak peek into the app's unparalleled features and functionalities.\n\nAs visitors enter the Watch Hub landing page, they are greeted by a visually stunning and user-friendly interface that encapsulates the essence of cinematic magic. The design is not only aesthetically pleasing but also intuitive, providing a seamless navigation experience that sparks curiosity and anticipation.\n\nThe main goal of the landing page is to encourage visitors to show users the development status of the app and invite them to join the exclusive waitlist for early access to the app by providing their email addresses.\n\n Theology used: Next.js, Typescript, MongoDB",
+      "goal": "To create a landing page that showcases the app's features and functionalities and encourages visitors to join the waitlist for early access to the app.",
+      "challenge": "The primary challenge involved the assimilation of Next.js' latest APIs and concepts, such as server actions and the new app directory routing system.",
+      "solution": "Thaknfully, the Next.js documentation is very well written and provides a lot of examples."
+    }
+  },
+  {
+    "id": 2,
+    "slug": "watch-hub-app",
+    "title": "WatcHub",
+    "description": "A gateway to the future of watch content organization. Dive into our platform to experience the thrill of seamlessly arranging your movies, series, anime, and many more features.",
+    "imageSrc": "/images/projects/project_watchhub-app.webp",
+    "previewUrl": null,
+    "info": {
+      "client": "Nano",
+      "timeline": "In progress",
+      "services": "Design & Development",
+      "team": "2 people"
+    },
+    "data": {
+      "title": "Concept Design and Development",
+      "description": "The future of watch content organization with WatcHub, a revolutionary movie watchlist app that is set to redefine the way you experience and discover films. This project represents the app that serves as your gateway to a world of cinematic wonders, enticing you with a sneak peek into the features and functionalities.\n\nThe goal of the app is to make a perfect place where users can keep everything they watch for future recommendations with personalized recommendations and unmatched ways to find something interesting for themselves.\n\nTheology used: React Native, Typescript, Firebase, ReduxToolkit",
+      "goal": "Create a platform that allows users to organize their watch content in a seamless way and gives meaningful suggestions",
+      "challenge": "The task involves creating a solution that is exceptionally straightforward, visually appealing, and user-friendly. The goal is to incorporate features that provide meaningful suggestions.",
+      "solution": "Utilizations of machine learning for smart search and recommendations. Collect feedback, ensure responsiveness, and continuously update to deliver a seamless, user-friendly experience."
+    }
+  },
+  {
+    "id": 3,
+    "slug": "offline-chat",
+    "title": "OfflineChat",
+    "description": "The future of seamless Offline communication. Explore our app to experience the convenience of connecting with friends, family, and colleagues even without an internet connection.",
+    "imageSrc": "/images/projects/project_chat.jpg",
+    "previewUrl": null,
+    "info": {
+      "client": "Nano",
+      "timeline": "In progress",
+      "services": "Design & Development",
+      "team": "3 people"
+    },
+    "data": {
+      "title": "Chat with no limits",
+      "description": "OfflineChat introduces a groundbreaking chat application, enabling users to communicate securely without requiring an internet connection, irrespective of their device. The app boasts a user-friendly design, featuring a sleek interface that enhances ease of use.\n\nMoreover, OfflineChat's intuitive design extends beyond seamless communication to the effortless creation of chat rooms and conversations. The simplicity of the interface ensures that users can easily navigate and establish chats, making the overall experience both straightforward and user-friendly.\n\nTheology used: React Native, Typescript",
+      "goal": "Create a chat app that allows users to securely communicate with each other even without an internet connection regardless of the phone they have.",
+      "challenge": "To find a way to connect both Android and iOS users without an internet connection without compromising security and connection quality.",
+      "solution": "A possible solution is to use Bluetooth for initial connection and a P2P model for message sharing with a secure protocol to encrypt the messages."
+    }
+  },
+  {
+    "id": 4,
+    "slug": "car-chase-game",
+    "title": "Car Chase",
+    "description": "Thrilling car chase game: Navigate high-speed pursuits through dynamic cityscapes, evade obstacles, and outmaneuver rivals. Test your reflexes in this adrenaline-fueled race for victory, where every second matters.",
+    "imageSrc": "/images/projects/car_chase.jpeg",
+    "previewUrl": "https://grigorebudac.github.io/car-chase-game/",
+    "info": {
+      "client": "VIA",
+      "timeline": "3 months",
+      "services": "Design & Development",
+      "team": "3 people"
+    },
+    "data": {
+      "title": "First steps in game dev",
+      "description": "Back in the good old days when I was studying at the university (1y ago) for our final assignment for game dev course we had to make a game the project you currently see it the result of that. We got an ambitious idea to make a car chase game with a lot of features and fun for us to develop and play.\n\nThe game is made in Unity written in C#. It is a car chase game that can be played on together with a friend on one pc like in the good old days. The main goal for the bandit is to escape the police and for the police to catch the bandit. Along the way there are going to be a lot of obstacles and power-ups that will make the game more fun to play.\n\nTheology used: Unity, C#",
+      "goal": "The goal was to create a game that is fun to play and has a good user experience.",
+      "challenge": "Without any experience in game development, we had to learn a lot of new things and find a way to make the game fun to play.",
+      "solution": "Around 3 months of work and a long night before deadline made it possible to create this game."
+    }
+  }
+]

@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "name": "Shouter",
+    "title": "Software\nDeveloper Intern",
+    "period": "aug 2021 - jan 2022",
+    "imageSrc": "/images/companies/sh.jpg",
+    "color": "#FFAADF"
+  },
+  {
+    "id": 2,
+    "name": "Shouter",
+    "title": "Software\nDeveloper",
+    "period": "jan 2022 - feb 2023",
+    "imageSrc": "/images/companies/sh.jpg",
+    "color": "#FFAADF"
+  },
+  {
+    "id": 3,
+    "name": "Wiredelta",
+    "title": "Web & Mobile\nDeveloper",
+    "period": "mar 2023 - sep 2023",
+    "imageSrc": "/images/companies/wd.jpg",
+    "color": "#44B5A6"
+  },
+  {
+    "id": 4,
+    "name": "Onskeskyen",
+    "title": "Full-Stack\nDeveloper",
+    "period": "sep 2023 - present",
+    "imageSrc": "/images/companies/gw.jpg",
+    "color": "#1CABCE"
+  }
+]

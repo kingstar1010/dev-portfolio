@@ -1,0 +1,83 @@
+.banner {
+  position: relative;
+  border-radius: 15px;
+  display: flex;
+  background-color: black;
+  height: 400px;
+  overflow: hidden;
+  margin-top: 150px;
+  padding: 40px;
+  margin-bottom: 200px;
+}
+
+.image {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+}
+
+.socials {
+  z-index: 5;
+  height: 100%;
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.info {
+  z-index: 5;
+  flex: 1;
+}
+
+/* Tablet and Smaller Desktop */
+@media (min-width: 701px) and (max-width: 1200px) {
+  .banner {
+    margin-top: 100px;
+    margin-bottom: 150px;
+  }
+}
+
+@media (min-width: 701px) and (max-width: 1000px) {
+  .banner {
+    display: flex;
+    gap: 10px;
+  }
+
+  .info p:nth-of-type(2) {
+    font-size: 0.9rem;
+    line-height: 1.2rem;
+  }
+
+  .name {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .banner {
+    margin-top: 10px;
+    padding: 16px;
+    margin-bottom: 100px;
+    flex-direction: column-reverse;
+    height: auto;
+  }
+
+  .socials {
+    width: 100%;
+    margin-top: 60px;
+    margin-bottom: 10px;
+  }
+
+  .socials:nth-child(2) {
+    display: none;
+  }
+
+  .image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 70% 50%;
+  }
+}

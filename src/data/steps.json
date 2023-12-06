@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "title": "I start with tea.",
+    "description": "It's important."
+  },
+  {
+    "id": 2,
+    "title": "I read the scope.",
+    "description": "Sometimes."
+  },
+  {
+    "id": 3,
+    "title": "I try to understand the scope",
+    "description": "This can be tricky."
+  },
+  {
+    "id": 4,
+    "title": "I start writing code.",
+    "description": "It usually works."
+  },
+  {
+    "id": 5,
+    "title": "I test the code.",
+    "description": "Sometimes."
+  },
+  {
+    "id": 6,
+    "title": "I send the code to review.",
+    "description": "And hope it doesn't break anything."
+  }
+]

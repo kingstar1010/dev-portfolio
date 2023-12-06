@@ -1,0 +1,36 @@
+[
+  {
+    "id": 1,
+    "title": "Design",
+    "description": "I value simple content structure, clean design patterns, and thoughtful interactions. I alway try to be as carefully to details as possible. A good UX is really important to me and I try to make sure that my products are as user friendly as possible.",
+    "sections": [
+      {
+        "id": 1,
+        "title": "Things I designing:",
+        "description": "UX, UI, Web, Mobile, Apps, Games"
+      },
+      {
+        "id": 2,
+        "title": "Design tools I mastered:",
+        "description": "Figma, Photoshop, Illustrator"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Development",
+    "description": "I am a software developer with a passion for building beautiful, responsive websites and mobile applications. I have a background in both front-end and back-end development, and I am currently working as a full-stack software developer.",
+    "sections": [
+      {
+        "id": 1,
+        "title": "Languages I speak:",
+        "description": "JavaScript, Java, C#, Typescript"
+      },
+      {
+        "id": 2,
+        "title": "My superpowers:",
+        "description": "Next.js, React, Node, Express, MongoDB, PostgreSQL, Material-UI, Styled-Components, and more..."
+      }
+    ]
+  }
+]

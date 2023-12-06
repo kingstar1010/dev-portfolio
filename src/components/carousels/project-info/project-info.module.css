@@ -1,0 +1,86 @@
+.cards {
+  width: 100%;
+  max-width: 1000px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.card {
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid #a5a5a550;
+  padding: 24px;
+  align-self: stretch;
+}
+
+.card h1 {
+  color: #4d4c4c;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 110%;
+  white-space: pre-line;
+}
+
+.card p {
+  color: #818181;
+  font-size: 0.92rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  margin-top: 16px;
+  white-space: pre-line;
+}
+
+@media (max-width: 1301px) {
+  .card p {
+    font-size: 0.85rem;
+  }
+}
+
+/* Tablet and Smaller Desktop */
+@media (min-width: 1001px) and (max-width: 1200px) {
+  .cards {
+    max-width: none;
+    padding: 0px 50px 0px 50px;
+  }
+}
+
+@media (min-width: 701px) and (max-width: 1000px) {
+  .cards {
+    max-width: none;
+    padding: 0px 50px 0px 50px;
+    gap: 15px;
+  }
+
+  .card p {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .cards {
+    margin-top: 85px;
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    padding-left: 30px;
+    padding-right: 30px;
+    -ms-overflow-style: none; /* Internet Explorer 10+ */
+    scrollbar-width: none; /* Firefox */
+  }
+
+  .cards::-webkit-scrollbar {
+    display: none; /* Safari and Chrome */
+  }
+
+  .card {
+    width: 100%;
+    flex-shrink: 0;
+    scroll-snap-align: center;
+  }
+}
